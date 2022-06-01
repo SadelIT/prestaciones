@@ -1,14 +1,19 @@
 <template>
-    <div id='container' style="margin:50px auto 0; width:250px;">
-        <br><br>
-        <label class="custom-input-label">Mask support with default format</label>
-        <br><br>
-        <input id='mask' />
-        <br><br><br>
-        <label class="custom-input-label">Mask support with custom format</label>
-        <br><br>
-        <input id='format' />
-    </div>
+<h1>Seleccione La fecha de inicio y finalizacion laboral </h1>
+
+<label for="start">Fecha de Inicio:</label>
+
+<input type="date" id="inicio" name="trip-start"
+       value=""
+       min="" max="">
+
+
+       <label for="start">Fecha de Salida:</label>
+
+<input type="date" id="salida" name="trip-start"
+       value=""
+       min="" max="">
+
 
   
   
