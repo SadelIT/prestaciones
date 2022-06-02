@@ -1,11 +1,20 @@
 <template>
   <Ingresardatos></Ingresardatos>
-  <Ingresarsalario></IngresarSalario>
-  <Seleccionarprestaciones></Seleccionarprestaciones>
-  <Resumensalario></Resumensalario>
-  <Seleccionarcalculo></Seleccionarcalculo>
+
   <seleccionarfecha></seleccionarfecha>
+
   <Seleccionarperiodo></Seleccionarperiodo>
+
+  <Seleccionarcalculo></Seleccionarcalculo>
+
+  <Ingresarsalario></IngresarSalario>
+
+  <Seleccionarprestaciones></Seleccionarprestaciones>
+  
+  <Resumensalario></Resumensalario>
+ 
+ 
+  
 
 
 </template>
