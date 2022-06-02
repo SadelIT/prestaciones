@@ -1,35 +1,47 @@
 <template>
-  <div class="datos">
-    
-  </div>
+<div>
+<input type="number" :value="value0" @input="numberone = $event.target.value" >
+<input type="number" :value="value1" @input="numbertwo = $event.target.value" >
+<button v-on:click="operacion()">Resolver</button>
+<p>Health Discounts: {{mensaje}}</p>
+<p>Social Security Discounts: {{mensaje2}}</p>
+<p>Taxes Discounts: {{mensaje3}}</p>
+<p>Taxes Discounts: {{mensaje4}}</p>
+<p>Discounts: {{mensaje5}}</p>
+<p>Net Salary: {{mensaje5}}</p>
+</div>
 
-  <p>ID: {{ ID }}</p>
-  <input v-model="ID" placeholder="Your ID" />
+  
 
-  <p>NAME: {{ Name }}</p>
-  <input v-model="Name" placeholder="Your Name" />
-
-  <p>COMPANY: {{ Company }}</p>
-  <input v-model="Company" placeholder="Your Company" />
 
   
   
 </template>
 
 <script>
-export default {
+  
+  export default {
+  
+  
   name: 'IngresarDatos',
-  data() {
-    return {
-      message: '',
-      ID: '',
-      Name: '',
-      Company: ''
-
-    }
-  },
-  props: {
-    msg: String
-  }
+  data: function () {
+        return {
+            numberone: null,
+            numbertwo: null,
+            mensaje: null,
+            mensaje2: null,
+            mensaje3: null
+        }
+    },
+    methods: {
+        operacion() {
+            this.mensaje = parseInt(this.numberone) +
+                parseInt(this.numbertwo);
+            this.mensaje2 = parseInt(this.numberone) -
+                parseInt(this.numbertwo);
+            this.mensaje3 = parseInt(this.numberone) *
+                parseInt(this.numbertwo);
+        }
+    },
 }
 </script>
