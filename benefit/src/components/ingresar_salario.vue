@@ -1,7 +1,15 @@
 <template>
 
+<<<<<<< HEAD
 <div></div>
 <!--
+=======
+<<<<<<< HEAD
+<div></div>
+=======
+
+
+>>>>>>> 82c634eb73eaf8f08a93add35514a706a91a4d73
 <button  class="btn btn-primary" @click="click('calculate')">calculate</button>
 
 <button  class="btn btn-danger" @click="click('reset')">reset</button>
@@ -33,6 +41,7 @@
 
 
 
+>>>>>>> 29a6e1132f7f49e858ee90ea03bedca91f7f9f5b
   
 </template>
 
