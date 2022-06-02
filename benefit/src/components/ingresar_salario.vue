@@ -1,7 +1,7 @@
 <template>
 
-
-
+<div></div>
+<!--
 <button  class="btn btn-primary" @click="click('calculate')">calculate</button>
 
 <button  class="btn btn-danger" @click="click('reset')">reset</button>
@@ -24,10 +24,11 @@
  Type the second number:
  <input type="number" v-model.number="n2"><br />
  The sum() is: {{ sum() }}<br />
- The sum2 is: {{ sum2 }}
+ The sum2 is: {{ sum2 }} <br>
+ the number  is: {{ sum3 }}
 </div>
 
-
+-->
 
 
 
