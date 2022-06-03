@@ -1,4 +1,4 @@
-<template>
+ <template>
 
     <div class="card"  id="Calculo">
     <div class="container">
@@ -205,10 +205,5 @@ p {
   background: rgb(255,0,0);
   cursor: pointer;
 }
-
-
-
-
-
 
 </style>
