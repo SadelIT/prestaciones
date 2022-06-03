@@ -1,5 +1,6 @@
 <template>
 
+
   <div>
   <input type="number" :value="value0" @input="salary = $event.target.value" >
 
@@ -48,14 +49,19 @@ export default {
 
             this.NetSalary = parseInt(this.salary) -
                 (this.Discounts);
-
-            this.Taxes = parseInt(this.NetSalary) * (12) 
             
 
-           if (this.NetSalary > 34685.01){
-              this.Taxes =  this.NetSalary 
+           if (this.salary <= 55291.01  || this.salary >= 36862.01 ){
+              this.Taxes =  this.NetSalary * this.isr
               
-           }
+              
+           } 
+            else if(this.salary >= 55291.02){
+                this.Taxes = 'hello'
+
+            }
+
+           //this.Taxes = parseInt(this.Taxes * this.isr)
 
 
             
