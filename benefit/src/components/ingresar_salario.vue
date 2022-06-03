@@ -1,47 +1,6 @@
 <template>
 
-<<<<<<< HEAD
 <div></div>
-<!--
-=======
-<<<<<<< HEAD
-<div></div>
-=======
-
-
->>>>>>> 82c634eb73eaf8f08a93add35514a706a91a4d73
-<button  class="btn btn-primary" @click="click('calculate')">calculate</button>
-
-<button  class="btn btn-danger" @click="click('reset')">reset</button>
-
-
-
-
-<p class="text-lowercase">{{GrossSalary}}</p>
-
-<p class="text-lowercase">{{HealthDiscounts}}</p>
-<p class="text-lowercase">{{HealthDiscounts}}</p>
-
-<p class="text-lowercase">{{TaxesDiscounts}}:</p>
-<p class="text-lowercase">{{Discounts}}</p>
-<p class="text-lowercase">{{NetSalary}}</p>
-
-<div id="app">
- Type the first number:
- <input type="number" v-model.number="n1"><br />
- Type the second number:
- <input type="number" v-model.number="n2"><br />
- The sum() is: {{ sum() }}<br />
- The sum2 is: {{ sum2 }} <br>
- the number  is: {{ sum3 }}
-</div>
-
--->
-
-
-
-
->>>>>>> 29a6e1132f7f49e858ee90ea03bedca91f7f9f5b
   
 </template>
 
