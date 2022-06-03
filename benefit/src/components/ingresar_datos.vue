@@ -1,4 +1,5 @@
 <template>
+
   <div>
   <input type="number" :value="value0" @input="salary = $event.target.value" >
 
@@ -27,15 +28,13 @@ export default {
             Social: null,
             Taxes: null,
             Discounts: null,
-            NetSalary: null
+            NetSalary: null,
+            isr: 0.15
         }
     },
     methods: {
         operacion() {
             
-
-
-
             this.Salary1 = (this.salary)
             
             this.Health = parseInt(this.salary) *
@@ -44,30 +43,31 @@ export default {
             this.Social = parseInt(this.salary) *
                 (2.87 / 100)
 
-
             this.Discounts = parseInt(this.Health) +
                 parseInt(this.Social);
 
             this.NetSalary = parseInt(this.salary) -
                 (this.Discounts);
 
-            this.Taxes = parseInt(this.salary) -
-             parseInt(this.Discounts)
-
+            this.Taxes = parseInt(this.NetSalary) * (12) 
             
 
-            //if (this.salary >= 416220.01 / 12  || this.salary == 624329.00){
-            //this.Taxes = (this.NetSalary) * (0.15 / 100)
+           if (this.NetSalary > 34685.01){
+              this.Taxes =  this.NetSalary 
+              
+           }
 
+
+            
+            //if (this.salary >= 34685.01){
+            //this.Taxes = (this.salary) * (12)
+  
           //} 
-
           //this.Discounts = parseInt(this.Discounts) +
             //Math.round(this.Taxes)
-
            //this.NetSalary = parseInt(this.salary) -
                 //Math.round(this.Discounts)
           
-
           
         }
     }
