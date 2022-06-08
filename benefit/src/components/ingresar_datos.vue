@@ -24,16 +24,10 @@
 
 
 <div class="datelaboral">
-  <p> Start Date:</p>
- <input class="startdate" type="date" v-model="startdate">
- <p> {{startdate}} </p>
-
-  <p> End Date:</p>
-  <input class="enddate" type="date" v-model="enddate">
- <p> {{enddate}} </p>
 
 
- <p>mostrar prueba: {{preAvisado}}</p>
+
+
 
   <div class="calculate info">
 
@@ -109,7 +103,7 @@
             mydate: '',
           //END VAR DATE
 
-            preAvisado: '',
+         
             starts: '',
             moment: '',
 

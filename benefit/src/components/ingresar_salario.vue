@@ -1,4 +1,10 @@
 <template>
+
+
+  <Ingresardatos></Ingresardatos>
+
+
+
   <br>
  <div class="card" style="width: 35rem;">
 
@@ -97,15 +103,18 @@
   
 </div> 
 
-  <p>total sumatoria {{summaryTotal}}</p>
-  <p>promedio mensual {{promedioMensual}}</p>
-  <p>promedio diario{{promedioDiario}}</p>
+  <p>Summary Total {{summaryTotal}}</p>
+  <p>Salary Monthly {{promedioMensual}}</p>
+  <p>Salary Diary{{promedioDiario}}</p>
+
+  <p>preavisado{{preavisado}}</p>
 
 
 
 </template>
 
 <script>
+
 export default {
   name: 'IngresarSalario',
   data() {
@@ -122,37 +131,40 @@ export default {
         Total10: null,
         Total11: null,
         Total12: null,
-        salary01: null,
-        comission01: null,
-        salary02: null,
-        comission02: null,
-        salary03: null,
-        comission03: null,
-        salary04: null,
-        comission04: null,
-        salary05: null,
-        comission05: null,
-        salary06: null,
-        comission06: null,
-        salary07: null,
-        comission07: null,
-        salary08: null,
-        comission08: null,
-        salary09: null,
-        comission09: null,
-        salary10: null,
-        comission10: null,
-        salary11: null,
-        comission11: null,
-        salary12: null,
-        comission12: null,
+        salary01: 0,
+        comission01: 0,
+        salary02: 0,
+        comission02: 0,
+        salary03: 0,
+        comission03: 0,
+        salary04: 0,
+        comission04: 0,
+        salary05: 0,
+        comission05: 0,
+        salary06: 0,
+        comission06: 0,
+        salary07: 0,
+        comission07: 0,
+        salary08: 0,
+        comission08: 0,
+        salary09: 0,
+        comission09: 0,
+        salary10: 0,
+        comission10: 0,
+        salary11: 0,
+        comission11: 0,
+        salary12: 0,
+        comission12: 0,
         
-        summaryTotal: null,
-        promedioMensual: null,
-        promedioDiario: null
+        summaryTotal: 0,
+        promedioMensual: 0,
+        promedioDiario: 0
 
          
       }
+
+  },
+  props:{
 
   },
  methods: {
@@ -182,9 +194,12 @@ export default {
      parseInt(this.salary11) + parseInt(this.comission11) + parseInt(this.salary12) + 
      parseInt(this.comission12)
 
-     this.promedioMensual = parseInt(this.summaryTotal) / (12)
+     this.promedioMensual = parseInt((this.summaryTotal) / (12))
 
-     this.promedioDiario = parseInt((this.promedioMensual) / (176)).toFixed(2)
+     this.promedioDiario = parseInt((this.promedioMensual) / (23.83))
+
+     this.preavisado = parseInt(this.summaryTotal) / (12)
+     this.preavisado = parseInt(this.preavisado) / (23.83)
 
 
 

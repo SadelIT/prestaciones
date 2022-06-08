@@ -12,6 +12,8 @@
   <Seleccionarprestaciones></Seleccionarprestaciones>
   
   <Resumensalario></Resumensalario>
+
+  
  
  
   
@@ -30,6 +32,8 @@ import Seleccionarperiodo from './components/seleccionar_periodo'
 
 
 export default {
+
+  
   name: 'App',
   components: {
     
@@ -43,6 +47,8 @@ export default {
   }
 }
 </script>
+
+
 
 <style>
 
