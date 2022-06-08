@@ -195,17 +195,10 @@
 
 
 
-td{
-  background-color: ;
-}
 
 p {
   font-weight: bold;
 
-}
-
-.date{
-  
 }
 
 
