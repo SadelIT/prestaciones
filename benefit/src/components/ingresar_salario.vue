@@ -1,6 +1,6 @@
 <template>
-  
- <div class="card" style="width: 18rem;">
+  <br>
+ <div class="card" style="width: 35rem;">
 
   <div class="container">
 <table class="table">
@@ -15,8 +15,8 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td> <input type="text" placeholder="0.00"  @input="salary01 = $event.target.value" /></td>
-      <td><input type="text" placeholder="0.00"  @input="comission01 = $event.target.value" /></td>
+      <td> <input type="number" placeholder="0.00"  @input="salary01 = $event.target.value" /></td>
+      <td><input type="number" placeholder="0.00"  @input="comission01 = $event.target.value" /></td>
       <td>{{Total1}}</td>
       
       
@@ -25,78 +25,82 @@
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td><input type="text" placeholder="0.00" /></td>
-      <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+      <td><input type="number" placeholder="0.00" @input="salary02 = $event.target.value" /></td>
+      <td><input type="number" placeholder="0.00" @input="comission02 = $event.target.value"  /></td>
+      <td>{{Total2}}</td>
     </tr>
     <tr>
       <th scope="row">3</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary03 = $event.target.value"  /></td>
+        <td><input type="number" placeholder="0.00" @input="comission03 = $event.target.value"  /></td>
+      <td>{{Total3}}</td>
     </tr>
     <tr>
       <th scope="row">4</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary04 = $event.target.value"  /></td>
+        <td><input type="number" placeholder="0.00"  @input="comission04 = $event.target.value" /></td>
+      <td>{{Total4}}</td>
     </tr>
     <tr>
       <th scope="row">5</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary05 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission05 = $event.target.value" /></td>
+      <td>{{Total5}}</td>
     </tr>
     <tr>
       <th scope="row">6</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary06 = $event.target.value"  /></td>
+        <td><input type="number" placeholder="0.00" @input="comission06 = $event.target.value" /></td>
+      <td>{{Total6}}</td>
     </tr>
     <tr>
       <th scope="row">7</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary07 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission07 = $event.target.value" /></td>
+      <td>{{Total7}}</td>
     </tr>
         <tr>
       <th scope="row">8</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary08 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission08 = $event.target.value" /></td>
+      <td>{{Total8}}</td>
     </tr>
         <tr>
       <th scope="row">9</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary09 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission09 = $event.target.value" /></td>
+      <td>{{Total9}}</td>
     </tr>
         <tr>
       <th scope="row">10</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary10 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission10 = $event.target.value" /></td>
+      <td>{{Total10}}</td>
     </tr>
         <tr>
       <th scope="row">11</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary11 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission11 = $event.target.value" /></td>
+      <td>{{Total11}}</td>
     </tr>
         <tr>
       <th scope="row">12</th>
-        <td><input type="text" placeholder="0.00" /></td>
-        <td><input type="text" placeholder="0.00" /></td>
-      <td>{{Total}}</td>
+        <td><input type="number" placeholder="0.00" @input="salary12 = $event.target.value" /></td>
+        <td><input type="number" placeholder="0.00" @input="comission12 = $event.target.value" /></td>
+      <td>{{Total12}}</td>
     </tr>
   </tbody>  
   </table>
+   <button v-on:click="operacion()" class="btn btn-primary">Calculate</button>
  </div>
 
   
 </div> 
 
-       <button v-on:click="operacion()" class="btn btn-primary">Calculate</button>
+  <p>total sumatoria {{summaryTotal}}</p>
+  <p>promedio mensual {{promedioMensual}}</p>
+  <p>promedio diario{{promedioDiario}}</p>
+
 
 
 </template>
@@ -106,10 +110,47 @@ export default {
   name: 'IngresarSalario',
   data() {
       return{
-         Total1: null,
-        Total: null,
-        salary01: '',
-        comission01: '',
+        Total1: null,
+        Total2: null,
+        Total3: null,
+        Total4: null,
+        Total5: null,
+        Total6: null,
+        Total7: null,
+        Total8: null,
+        Total9: null,
+        Total10: null,
+        Total11: null,
+        Total12: null,
+        salary01: null,
+        comission01: null,
+        salary02: null,
+        comission02: null,
+        salary03: null,
+        comission03: null,
+        salary04: null,
+        comission04: null,
+        salary05: null,
+        comission05: null,
+        salary06: null,
+        comission06: null,
+        salary07: null,
+        comission07: null,
+        salary08: null,
+        comission08: null,
+        salary09: null,
+        comission09: null,
+        salary10: null,
+        comission10: null,
+        salary11: null,
+        comission11: null,
+        salary12: null,
+        comission12: null,
+        
+        summaryTotal: null,
+        promedioMensual: null,
+        promedioDiario: null
+
          
       }
 
@@ -118,7 +159,37 @@ export default {
 
    operacion: function(){
 
-     this.Total1 = (this.salary01) + (this.comission01)
+     this.Total1 = parseInt(this.salary01) + parseInt(this.comission01)
+     this.Total2 = parseInt(this.salary02) + parseInt(this.comission02)
+     this.Total3 = parseInt(this.salary03) + parseInt(this.comission03)
+     this.Total4 = parseInt(this.salary04) + parseInt(this.comission04)
+     this.Total5 = parseInt(this.salary05) + parseInt(this.comission05)
+     this.Total6 = parseInt(this.salary06) + parseInt(this.comission06)
+     this.Total7 = parseInt(this.salary07) + parseInt(this.comission07)
+     this.Total8 = parseInt(this.salary08) + parseInt(this.comission08)
+     this.Total9 = parseInt(this.salary09) + parseInt(this.comission09)
+     this.Total10 = parseInt(this.salary10) + parseInt(this.comission10)
+     this.Total11 = parseInt(this.salary11) + parseInt(this.comission11)
+     this.Total12 = parseInt(this.salary12) + parseInt(this.comission12)
+
+     this.summaryTotal = parseInt(this.salary01) + parseInt(this.comission01) + 
+     parseInt(this.salary02) + parseInt(this.comission02) + parseInt(this.salary03) + 
+     parseInt(this.comission03) + parseInt(this.salary04) + parseInt(this.comission04) +
+     parseInt(this.salary05) + parseInt(this.comission05) +  parseInt(this.salary06) + 
+     parseInt(this.comission06) + parseInt(this.salary07) + parseInt(this.comission07) +
+     parseInt(this.salary08) + parseInt(this.comission08) +  parseInt(this.salary09) + 
+     parseInt(this.comission09) +  parseInt(this.salary10) + parseInt(this.comission10) +
+     parseInt(this.salary11) + parseInt(this.comission11) + parseInt(this.salary12) + 
+     parseInt(this.comission12)
+
+     this.promedioMensual = parseInt(this.summaryTotal) / (12)
+
+     this.promedioDiario = parseInt((this.promedioMensual) / (176)).toFixed(2)
+
+
+
+
+
 
         
 
@@ -144,3 +215,20 @@ export default {
 
 }
 </script>
+
+<style scoped>
+
+.btn {
+    padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+    margin: 5px;
+    padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
